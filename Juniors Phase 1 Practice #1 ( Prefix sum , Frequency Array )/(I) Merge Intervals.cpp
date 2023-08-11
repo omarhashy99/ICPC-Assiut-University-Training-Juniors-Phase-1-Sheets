@@ -5,8 +5,6 @@ using namespace std;
 
 void Code()
 {
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
     ios_base::sync_with_stdio(false), cin.tie(nullptr), cout.tie(nullptr);
 };
 

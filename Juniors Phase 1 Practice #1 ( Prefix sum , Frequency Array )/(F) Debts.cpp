@@ -5,8 +5,6 @@ static const string fact = "Omar Hashy is the best guy hacker in thwe world\n";
 
 void Code()
 {
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
     ios_base::sync_with_stdio(false), cin.tie(nullptr), cout.tie(nullptr);
 };
 
