@@ -19,12 +19,7 @@ void solve()
         cin >> x >> y;
         vec[i] = {x, y};
     }
-    sort(vec.begin(), vec.end(), [](const pair<int, int> &l, const pair<int, int> &r)
-         {
-            if (l.first == r.first) {
-                return l.second > r.second;
-            }
-            return l.first < r.first; });
+    sort(vec.begin(), vec.end());
     auto it = vec.begin();
     while (it != vec.end())
     {
@@ -32,7 +27,7 @@ void solve()
         it++;
         while (it != vec.end() && it->first <= tem.second)
         {
-            tem.second = max(it->second,tem.second);
+            tem.second = max(it->second, tem.second);
             it++;
         }
 
@@ -43,8 +38,6 @@ void solve()
 int main()
 {
     Code();
-
     solve();
-
     return 0;
 }
